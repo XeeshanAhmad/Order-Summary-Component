@@ -1,0 +1,139 @@
+:root{
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2{
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:first-child{
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--Bright-blue);
+  height: 3rem;
+  width: 90%;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem;
+  transition-duration: 0.4s;
+}
+
+button:first-child:hover{
+  background-color: hsl(245, 75%, 52%, 70%);
+}
+
+button:last-child{
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: white;
+  color: var(--Desaturated-blue);
+  border: none;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  transition-duration: 0.4s;
+}
+
+button:last-child:hover{
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+
+
+.main-text p{
+  color: var(--Desaturated-blue);
+  line-height: 1.5;
+}
+
+.image-hero img{
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card{
+  background-color: var(--Very-pale-blue);
+  max-width: 20rem;
+  border-radius: 20px 20px;
+}
+
+.main-text{
+  text-align: center;
+}
+
+.main-text p{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.price{
+  background-color: hsl(224, 23%, 55%, 10%);
+  display: flex;
+  margin: 1.5rem 1rem;
+  border-radius: 10px 10px;
+}
+
+.price img{
+  padding: 10px 10px ;
+}
+
+.price-value{
+  padding: 15px 40px 10px 10px;
+}
+
+.price a{
+  font-weight: 700;
+  padding-top: 25px;
+  transition-duration: 0.4s;
+}
+
+.price a:hover{
+  text-decoration: none;
+  color: hsl(245, 75%, 52%, 80%);
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution { margin-top: 20px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:801px) {
+  body{
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+
+  .main-text p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
